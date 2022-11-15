@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.panelDashboard = new System.Windows.Forms.Panel();
+            this.btnImport = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonChart = new System.Windows.Forms.Button();
-            this.buttonStorage = new System.Windows.Forms.Button();
-            this.buttonOrder = new System.Windows.Forms.Button();
-            this.buttonProduct = new System.Windows.Forms.Button();
-            this.buttonStaff = new System.Windows.Forms.Button();
-            this.buttonCustomer = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnBrand = new System.Windows.Forms.Button();
+            this.btnProduct = new System.Windows.Forms.Button();
+            this.btnCategory = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
+            this.btnCustomer = new System.Windows.Forms.Button();
             this.labelDashboard = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
             this.panelDashboard.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
@@ -49,19 +50,38 @@
             // panelDashboard
             // 
             this.panelDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(35)))), ((int)(((byte)(52)))));
+            this.panelDashboard.Controls.Add(this.btnImport);
             this.panelDashboard.Controls.Add(this.buttonExit);
-            this.panelDashboard.Controls.Add(this.buttonChart);
-            this.panelDashboard.Controls.Add(this.buttonStorage);
-            this.panelDashboard.Controls.Add(this.buttonOrder);
-            this.panelDashboard.Controls.Add(this.buttonProduct);
-            this.panelDashboard.Controls.Add(this.buttonStaff);
-            this.panelDashboard.Controls.Add(this.buttonCustomer);
+            this.panelDashboard.Controls.Add(this.btnOrder);
+            this.panelDashboard.Controls.Add(this.btnBrand);
+            this.panelDashboard.Controls.Add(this.btnProduct);
+            this.panelDashboard.Controls.Add(this.btnCategory);
+            this.panelDashboard.Controls.Add(this.btnStaff);
+            this.panelDashboard.Controls.Add(this.btnCustomer);
             this.panelDashboard.Controls.Add(this.labelDashboard);
             this.panelDashboard.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelDashboard.Location = new System.Drawing.Point(0, 55);
             this.panelDashboard.Name = "panelDashboard";
             this.panelDashboard.Size = new System.Drawing.Size(216, 665);
             this.panelDashboard.TabIndex = 0;
+            // 
+            // btnImport
+            // 
+            this.btnImport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnImport.FlatAppearance.BorderSize = 0;
+            this.btnImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImport.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnImport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImport.Location = new System.Drawing.Point(0, 422);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(216, 54);
+            this.btnImport.TabIndex = 3;
+            this.btnImport.Text = "Nhập liệu";
+            this.btnImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnImport.UseVisualStyleBackColor = true;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // buttonExit
             // 
@@ -80,113 +100,113 @@
             this.buttonExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonExit.UseVisualStyleBackColor = true;
             // 
-            // buttonChart
+            // btnOrder
             // 
-            this.buttonChart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonChart.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonChart.FlatAppearance.BorderSize = 0;
-            this.buttonChart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChart.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonChart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.buttonChart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonChart.Location = new System.Drawing.Point(0, 473);
-            this.buttonChart.Name = "buttonChart";
-            this.buttonChart.Size = new System.Drawing.Size(216, 75);
-            this.buttonChart.TabIndex = 6;
-            this.buttonChart.Text = "Biểu đồ";
-            this.buttonChart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonChart.UseVisualStyleBackColor = true;
-            this.buttonChart.Click += new System.EventHandler(this.buttonChart_Click);
+            this.btnOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrder.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOrder.FlatAppearance.BorderSize = 0;
+            this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrder.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOrder.Location = new System.Drawing.Point(0, 368);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(216, 54);
+            this.btnOrder.TabIndex = 6;
+            this.btnOrder.Text = "Đơn hàng";
+            this.btnOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
-            // buttonStorage
+            // btnBrand
             // 
-            this.buttonStorage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonStorage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonStorage.FlatAppearance.BorderSize = 0;
-            this.buttonStorage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStorage.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStorage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.buttonStorage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStorage.Location = new System.Drawing.Point(0, 398);
-            this.buttonStorage.Name = "buttonStorage";
-            this.buttonStorage.Size = new System.Drawing.Size(216, 75);
-            this.buttonStorage.TabIndex = 5;
-            this.buttonStorage.Text = "Kho";
-            this.buttonStorage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonStorage.UseVisualStyleBackColor = true;
-            this.buttonStorage.Click += new System.EventHandler(this.buttonStorage_Click);
+            this.btnBrand.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrand.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBrand.FlatAppearance.BorderSize = 0;
+            this.btnBrand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrand.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnBrand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBrand.Location = new System.Drawing.Point(0, 314);
+            this.btnBrand.Name = "btnBrand";
+            this.btnBrand.Size = new System.Drawing.Size(216, 54);
+            this.btnBrand.TabIndex = 5;
+            this.btnBrand.Text = "Thương hiệu";
+            this.btnBrand.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBrand.UseVisualStyleBackColor = true;
+            this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
-            // buttonOrder
+            // btnProduct
             // 
-            this.buttonOrder.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonOrder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonOrder.FlatAppearance.BorderSize = 0;
-            this.buttonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOrder.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.buttonOrder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOrder.Location = new System.Drawing.Point(0, 323);
-            this.buttonOrder.Name = "buttonOrder";
-            this.buttonOrder.Size = new System.Drawing.Size(216, 75);
-            this.buttonOrder.TabIndex = 4;
-            this.buttonOrder.Text = "Đơn hàng";
-            this.buttonOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonOrder.UseVisualStyleBackColor = true;
-            this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
+            this.btnProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProduct.FlatAppearance.BorderSize = 0;
+            this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProduct.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProduct.Location = new System.Drawing.Point(0, 260);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(216, 54);
+            this.btnProduct.TabIndex = 4;
+            this.btnProduct.Text = "Sản phẩm";
+            this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
-            // buttonProduct
+            // btnCategory
             // 
-            this.buttonProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonProduct.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonProduct.FlatAppearance.BorderSize = 0;
-            this.buttonProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProduct.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.buttonProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProduct.Location = new System.Drawing.Point(0, 248);
-            this.buttonProduct.Name = "buttonProduct";
-            this.buttonProduct.Size = new System.Drawing.Size(216, 75);
-            this.buttonProduct.TabIndex = 3;
-            this.buttonProduct.Text = "Sản phẩm";
-            this.buttonProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonProduct.UseVisualStyleBackColor = true;
-            this.buttonProduct.Click += new System.EventHandler(this.buttonProduct_Click);
+            this.btnCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCategory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCategory.FlatAppearance.BorderSize = 0;
+            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategory.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategory.Location = new System.Drawing.Point(0, 206);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(216, 54);
+            this.btnCategory.TabIndex = 3;
+            this.btnCategory.Text = "Danh mục";
+            this.btnCategory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCategory.UseVisualStyleBackColor = true;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
-            // buttonStaff
+            // btnStaff
             // 
-            this.buttonStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonStaff.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonStaff.FlatAppearance.BorderSize = 0;
-            this.buttonStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStaff.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.buttonStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStaff.Location = new System.Drawing.Point(0, 173);
-            this.buttonStaff.Name = "buttonStaff";
-            this.buttonStaff.Size = new System.Drawing.Size(216, 75);
-            this.buttonStaff.TabIndex = 2;
-            this.buttonStaff.Text = "Nhân viên";
-            this.buttonStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonStaff.UseVisualStyleBackColor = true;
-            this.buttonStaff.Click += new System.EventHandler(this.buttonStaff_Click);
+            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStaff.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStaff.FlatAppearance.BorderSize = 0;
+            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaff.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff.Location = new System.Drawing.Point(0, 152);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(216, 54);
+            this.btnStaff.TabIndex = 2;
+            this.btnStaff.Text = "Nhân viên";
+            this.btnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
-            // buttonCustomer
+            // btnCustomer
             // 
-            this.buttonCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCustomer.FlatAppearance.BorderSize = 0;
-            this.buttonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCustomer.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.buttonCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCustomer.Location = new System.Drawing.Point(0, 98);
-            this.buttonCustomer.Name = "buttonCustomer";
-            this.buttonCustomer.Size = new System.Drawing.Size(216, 75);
-            this.buttonCustomer.TabIndex = 1;
-            this.buttonCustomer.Text = "Khách hàng";
-            this.buttonCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonCustomer.UseVisualStyleBackColor = true;
-            this.buttonCustomer.Click += new System.EventHandler(this.buttonCustomer_Click);
+            this.btnCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCustomer.FlatAppearance.BorderSize = 0;
+            this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomer.Font = new System.Drawing.Font("Segoe UI Semilight", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomer.Location = new System.Drawing.Point(0, 98);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(216, 54);
+            this.btnCustomer.TabIndex = 1;
+            this.btnCustomer.Text = "Khách hàng";
+            this.btnCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // labelDashboard
             // 
@@ -213,6 +233,19 @@
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(1280, 55);
             this.panelTitleBar.TabIndex = 0;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTitle.Location = new System.Drawing.Point(0, 0);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(286, 55);
+            this.labelTitle.TabIndex = 2;
+            this.labelTitle.Text = "Quản lý cửa hàng xe đạp";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnMinimize
             // 
@@ -251,19 +284,6 @@
             this.panelMain.Size = new System.Drawing.Size(1064, 665);
             this.panelMain.TabIndex = 1;
             // 
-            // labelTitle
-            // 
-            this.labelTitle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Location = new System.Drawing.Point(0, 0);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(366, 55);
-            this.labelTitle.TabIndex = 2;
-            this.labelTitle.Text = "Quản lý cửa hàng xe đạp";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
@@ -276,8 +296,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmDashboard";
-            this.Text = "frmDashboard";
+            this.Name = "frmDashboardManagement";
+            this.Text = "frmDashboardManagement";
             this.panelDashboard.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -288,17 +308,18 @@
 
         private System.Windows.Forms.Panel panelDashboard;
         private System.Windows.Forms.Label labelDashboard;
-        private System.Windows.Forms.Button buttonCustomer;
-        private System.Windows.Forms.Button buttonStorage;
-        private System.Windows.Forms.Button buttonOrder;
-        private System.Windows.Forms.Button buttonProduct;
-        private System.Windows.Forms.Button buttonStaff;
-        private System.Windows.Forms.Button buttonChart;
+        private System.Windows.Forms.Button btnCustomer;
+        private System.Windows.Forms.Button btnBrand;
+        private System.Windows.Forms.Button btnProduct;
+        private System.Windows.Forms.Button btnCategory;
+        private System.Windows.Forms.Button btnStaff;
+        private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label btnCancel;
         private System.Windows.Forms.Label btnMinimize;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button btnImport;
     }
 }
