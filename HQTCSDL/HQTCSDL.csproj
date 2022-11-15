@@ -61,6 +61,12 @@
     <Compile Include="GUI\frmCategoryManagement.Designer.cs">
       <DependentUpon>frmCategoryManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmCustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCustomerDetail.Designer.cs">
+      <DependentUpon>frmCustomerDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmCustomerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,14 +111,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\frmBrandManagement.resx">
+      <DependentUpon>frmBrandManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCategoryManagement.resx">
       <DependentUpon>frmCategoryManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmCustomerDetail.resx">
+      <DependentUpon>frmCustomerDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCustomerManagement.resx">
       <DependentUpon>frmCustomerManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmImportManagement.resx">
+      <DependentUpon>frmImportManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmOrderManagement.resx">
+      <DependentUpon>frmOrderManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmProductManagement.resx">
       <DependentUpon>frmProductManagement.cs</DependentUpon>

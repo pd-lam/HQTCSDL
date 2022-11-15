@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace HQTCSDL.GUI
 {
-    public partial class frmCustomerManagement : Form
+    public partial class frmCustomerDetail : Form
     {
-        public frmCustomerManagement()
+        public frmCustomerDetail()
         {
             InitializeComponent();
         }
 
-        private void btnDetail_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            Form CusDetail = new frmCustomerDetail();
-            CusDetail.ShowDialog();
+            this.Close();
         }
     }
 }
