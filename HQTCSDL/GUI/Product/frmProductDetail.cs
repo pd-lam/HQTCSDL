@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HQTCSDL.GUI
+namespace HQTCSDL.GUI.Product
 {
-    public partial class frmCategoryManagement : Form
+    public partial class frmProductDetail : Form
     {
-        public frmCategoryManagement()
+        public frmProductDetail()
         {
             InitializeComponent();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

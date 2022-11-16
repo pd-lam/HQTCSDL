@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HQTCSDL.GUI
+namespace HQTCSDL.GUI.Brand
 {
-    public partial class frmStaffManagement : Form
+    public partial class frmBrandDetail : Form
     {
-        public frmStaffManagement()
+        public frmBrandDetail()
         {
             InitializeComponent();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

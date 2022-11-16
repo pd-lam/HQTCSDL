@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HQTCSDL.GUI
+namespace HQTCSDL.GUI.Order
 {
-    public partial class frmBrandManagement : Form
+    public partial class frmOrderDetail : Form
     {
-        public frmBrandManagement()
+        public frmOrderDetail()
         {
             InitializeComponent();
         }

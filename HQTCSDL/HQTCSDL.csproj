@@ -36,8 +36,20 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.5.0\lib\net461\FastMember.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,28 +61,109 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\frmBrandManagement.cs">
+    <Compile Include="Entity\BikeStoreDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BikeStoreDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\BikeStoreDbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\BikeStoreDbContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BikeStoreDbContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Chi_Tiet_Don_Hang.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Cua_Hang.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Dang_Nhap.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Don_Hang.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Khach_Hang.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Loai_SP.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Nhan_Hieu.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Nhan_Vien.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Nhap_Lieu.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\San_Pham.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_FindAllEmployee_Result.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_FindBillEmployee_Result.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sp_FindEmployeeByName_Result.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\sysdiagram.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Ton_Kho.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\view_DonHangKhachDaMua.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\view_ThongTinGiaoHang.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\view_TongTienMotDon.cs">
+      <DependentUpon>BikeStoreDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Brand\frmBrandDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmBrandManagement.Designer.cs">
+    <Compile Include="GUI\Brand\frmBrandDetail.Designer.cs">
+      <DependentUpon>frmBrandDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Brand\frmBrandManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Brand\frmBrandManagement.Designer.cs">
       <DependentUpon>frmBrandManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmCategoryManagement.cs">
+    <Compile Include="GUI\Category\frmCategoryDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmCategoryManagement.Designer.cs">
+    <Compile Include="GUI\Category\frmCategoryDetail.Designer.cs">
+      <DependentUpon>frmCategoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Category\frmCategoryManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Category\frmCategoryManagement.Designer.cs">
       <DependentUpon>frmCategoryManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmCustomerDetail.cs">
+    <Compile Include="GUI\Customer\frmCustomerDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmCustomerDetail.Designer.cs">
+    <Compile Include="GUI\Customer\frmCustomerDetail.Designer.cs">
       <DependentUpon>frmCustomerDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmCustomerManagement.cs">
+    <Compile Include="GUI\Customer\frmCustomerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmCustomerManagement.Designer.cs">
+    <Compile Include="GUI\Customer\frmCustomerManagement.Designer.cs">
       <DependentUpon>frmCustomerManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmDashboard.cs">
@@ -79,10 +172,16 @@
     <Compile Include="GUI\frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmImportManagement.cs">
+    <Compile Include="GUI\Import\frmImportDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmImportManagement.Designer.cs">
+    <Compile Include="GUI\Import\frmImportDetail.Designer.cs">
+      <DependentUpon>frmImportDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Import\frmImportManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Import\frmImportManagement.Designer.cs">
       <DependentUpon>frmImportManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmLogin.cs">
@@ -91,51 +190,73 @@
     <Compile Include="GUI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmOrderManagement.cs">
+    <Compile Include="GUI\Order\frmOrderDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmOrderManagement.Designer.cs">
+    <Compile Include="GUI\Order\frmOrderDetail.Designer.cs">
+      <DependentUpon>frmOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Order\frmOrderManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Order\frmOrderManagement.Designer.cs">
       <DependentUpon>frmOrderManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmProductManagement.cs">
+    <Compile Include="GUI\Product\frmProductDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmProductManagement.Designer.cs">
+    <Compile Include="GUI\Product\frmProductDetail.Designer.cs">
+      <DependentUpon>frmProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Product\frmProductManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Product\frmProductManagement.Designer.cs">
       <DependentUpon>frmProductManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmStaffManagement.cs">
+    <Compile Include="GUI\Staff\frmStaffDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmStaffManagement.Designer.cs">
+    <Compile Include="GUI\Staff\frmStaffDetail.Designer.cs">
+      <DependentUpon>frmStaffDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Staff\frmStaffManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Staff\frmStaffManagement.Designer.cs">
       <DependentUpon>frmStaffManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\frmBrandManagement.resx">
-      <DependentUpon>frmBrandManagement.cs</DependentUpon>
+    <Compile Include="Util\Utils.cs" />
+    <EmbeddedResource Include="GUI\Brand\frmBrandDetail.resx">
+      <DependentUpon>frmBrandDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmCategoryManagement.resx">
-      <DependentUpon>frmCategoryManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmCustomerDetail.resx">
+    <EmbeddedResource Include="GUI\Customer\frmCustomerDetail.resx">
       <DependentUpon>frmCustomerDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmCustomerManagement.resx">
+    <EmbeddedResource Include="GUI\Customer\frmCustomerManagement.resx">
       <DependentUpon>frmCustomerManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmImportManagement.resx">
+    <EmbeddedResource Include="GUI\Import\frmImportManagement.resx">
       <DependentUpon>frmImportManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmOrderManagement.resx">
+    <EmbeddedResource Include="GUI\Order\frmOrderManagement.resx">
       <DependentUpon>frmOrderManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmProductManagement.resx">
+    <EmbeddedResource Include="GUI\Product\frmProductDetail.resx">
+      <DependentUpon>frmProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Product\frmProductManagement.resx">
       <DependentUpon>frmProductManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmStaffManagement.resx">
+    <EmbeddedResource Include="GUI\Staff\frmStaffDetail.resx">
+      <DependentUpon>frmStaffDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Staff\frmStaffManagement.resx">
       <DependentUpon>frmStaffManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -148,6 +269,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.manifest" />
+    <EntityDeploy Include="Entity\BikeStoreDbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BikeStoreDbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entity\BikeStoreDbContext.edmx.diagram">
+      <DependentUpon>BikeStoreDbContext.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,11 +292,25 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BUS\" />
-    <Folder Include="Entity\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Entity\BikeStoreDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BikeStoreDbContext.Context.cs</LastGenOutput>
+      <DependentUpon>BikeStoreDbContext.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entity\BikeStoreDbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BikeStoreDbContext.edmx</DependentUpon>
+      <LastGenOutput>BikeStoreDbContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Util\Query\CreateDatabase.sql" />
     <Content Include="Util\Query\InsertData.sql" />
+    <Content Include="Util\Query\SPs-Function.sql" />
+    <Content Include="Util\Query\Views.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace HQTCSDL.GUI
+﻿namespace HQTCSDL.GUI   
 {
     partial class frmCustomerDetail
     {
@@ -30,7 +30,6 @@
         {
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Label();
             this.lbId = new System.Windows.Forms.Label();
             this.lbFirstName = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
@@ -39,14 +38,14 @@
             this.lbLastName = new System.Windows.Forms.Label();
             this.lbCity = new System.Windows.Forms.Label();
             this.lbDistrict = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txbId = new System.Windows.Forms.TextBox();
+            this.txbFistName = new System.Windows.Forms.TextBox();
+            this.txbLastName = new System.Windows.Forms.TextBox();
+            this.txbPhone = new System.Windows.Forms.TextBox();
+            this.txbCity = new System.Windows.Forms.TextBox();
+            this.txbDistrict = new System.Windows.Forms.TextBox();
+            this.txbStreet = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
@@ -54,6 +53,7 @@
             this.btnOrderDetail = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +62,6 @@
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(15)))), ((int)(((byte)(40)))));
             this.panelTitleBar.Controls.Add(this.labelTitle);
-            this.panelTitleBar.Controls.Add(this.btnCancel);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(0, 0);
             this.panelTitleBar.Name = "panelTitleBar";
@@ -81,20 +80,6 @@
             this.labelTitle.TabIndex = 2;
             this.labelTitle.Text = "Thông tin khách hàng";
             this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCancel.Location = new System.Drawing.Point(1225, 0);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(55, 55);
-            this.btnCancel.TabIndex = 0;
-            this.btnCancel.Text = "X";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lbId
             // 
@@ -184,77 +169,77 @@
             this.lbDistrict.TabIndex = 9;
             this.lbDistrict.Text = "Tỉnh";
             // 
-            // textBox1
+            // txbId
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(198, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 34);
-            this.textBox1.TabIndex = 10;
+            this.txbId.Location = new System.Drawing.Point(198, 80);
+            this.txbId.Name = "txbId";
+            this.txbId.Size = new System.Drawing.Size(333, 34);
+            this.txbId.TabIndex = 10;
             // 
-            // textBox2
+            // txbFistName
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbFistName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(198, 120);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(333, 34);
-            this.textBox2.TabIndex = 11;
+            this.txbFistName.Location = new System.Drawing.Point(198, 120);
+            this.txbFistName.Name = "txbFistName";
+            this.txbFistName.Size = new System.Drawing.Size(333, 34);
+            this.txbFistName.TabIndex = 11;
             // 
-            // textBox3
+            // txbLastName
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(198, 160);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(333, 34);
-            this.textBox3.TabIndex = 12;
+            this.txbLastName.Location = new System.Drawing.Point(198, 160);
+            this.txbLastName.Name = "txbLastName";
+            this.txbLastName.Size = new System.Drawing.Size(333, 34);
+            this.txbLastName.TabIndex = 12;
             // 
-            // textBox4
+            // txbPhone
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(198, 200);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(333, 34);
-            this.textBox4.TabIndex = 13;
+            this.txbPhone.Location = new System.Drawing.Point(198, 200);
+            this.txbPhone.Name = "txbPhone";
+            this.txbPhone.Size = new System.Drawing.Size(333, 34);
+            this.txbPhone.TabIndex = 13;
             // 
-            // textBox5
+            // txbCity
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbCity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(775, 200);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(333, 34);
-            this.textBox5.TabIndex = 17;
+            this.txbCity.Location = new System.Drawing.Point(775, 200);
+            this.txbCity.Name = "txbCity";
+            this.txbCity.Size = new System.Drawing.Size(333, 34);
+            this.txbCity.TabIndex = 17;
             // 
-            // textBox6
+            // txbDistrict
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbDistrict.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(775, 160);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(333, 34);
-            this.textBox6.TabIndex = 16;
+            this.txbDistrict.Location = new System.Drawing.Point(775, 160);
+            this.txbDistrict.Name = "txbDistrict";
+            this.txbDistrict.Size = new System.Drawing.Size(333, 34);
+            this.txbDistrict.TabIndex = 16;
             // 
-            // textBox7
+            // txbStreet
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbStreet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(775, 120);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(333, 34);
-            this.textBox7.TabIndex = 15;
+            this.txbStreet.Location = new System.Drawing.Point(775, 120);
+            this.txbStreet.Name = "txbStreet";
+            this.txbStreet.Size = new System.Drawing.Size(333, 34);
+            this.txbStreet.TabIndex = 15;
             // 
-            // textBox8
+            // txbEmail
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(775, 80);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(333, 34);
-            this.textBox8.TabIndex = 14;
+            this.txbEmail.Location = new System.Drawing.Point(775, 80);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(333, 34);
+            this.txbEmail.TabIndex = 14;
             // 
             // btnEdit
             // 
@@ -266,7 +251,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(1129, 83);
+            this.btnEdit.Location = new System.Drawing.Point(1129, 94);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(140, 60);
             this.btnEdit.TabIndex = 25;
@@ -284,7 +269,7 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(1129, 176);
+            this.btnSave.Location = new System.Drawing.Point(1128, 160);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(140, 60);
             this.btnSave.TabIndex = 26;
@@ -330,7 +315,7 @@
             this.btnOrderDetail.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrderDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.btnOrderDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrderDetail.Location = new System.Drawing.Point(1129, 288);
+            this.btnOrderDetail.Location = new System.Drawing.Point(1128, 288);
             this.btnOrderDetail.Name = "btnOrderDetail";
             this.btnOrderDetail.Size = new System.Drawing.Size(140, 60);
             this.btnOrderDetail.TabIndex = 29;
@@ -348,7 +333,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(1128, 388);
+            this.btnAdd.Location = new System.Drawing.Point(1127, 354);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(140, 60);
             this.btnAdd.TabIndex = 30;
@@ -366,7 +351,7 @@
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(1129, 480);
+            this.btnDelete.Location = new System.Drawing.Point(1128, 420);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(140, 60);
             this.btnDelete.TabIndex = 31;
@@ -374,12 +359,32 @@
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(35)))), ((int)(((byte)(52)))));
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(1129, 648);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(140, 60);
+            this.btnCancel.TabIndex = 32;
+            this.btnCancel.Text = "Thoát";
+            this.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
+            // 
             // frmCustomerDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnOrderDetail);
@@ -387,14 +392,14 @@
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbCity);
+            this.Controls.Add(this.txbDistrict);
+            this.Controls.Add(this.txbStreet);
+            this.Controls.Add(this.txbEmail);
+            this.Controls.Add(this.txbPhone);
+            this.Controls.Add(this.txbLastName);
+            this.Controls.Add(this.txbFistName);
+            this.Controls.Add(this.txbId);
             this.Controls.Add(this.lbDistrict);
             this.Controls.Add(this.lbCity);
             this.Controls.Add(this.lbLastName);
@@ -420,7 +425,6 @@
 
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Label btnCancel;
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.Label lbFirstName;
         private System.Windows.Forms.Label lbPhone;
@@ -429,14 +433,14 @@
         private System.Windows.Forms.Label lbLastName;
         private System.Windows.Forms.Label lbCity;
         private System.Windows.Forms.Label lbDistrict;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txbId;
+        private System.Windows.Forms.TextBox txbFistName;
+        private System.Windows.Forms.TextBox txbLastName;
+        private System.Windows.Forms.TextBox txbPhone;
+        private System.Windows.Forms.TextBox txbCity;
+        private System.Windows.Forms.TextBox txbDistrict;
+        private System.Windows.Forms.TextBox txbStreet;
+        private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView dataGridView;
@@ -444,5 +448,6 @@
         private System.Windows.Forms.Button btnOrderDetail;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
